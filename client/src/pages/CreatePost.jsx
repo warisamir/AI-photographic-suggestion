@@ -56,7 +56,7 @@ const handleSubmit = async (e) => {
     if (form.prompt && form.photo) {
       setLoading(true);
       try {
-        const response = await fetch('https://ai-website.onrender.com/api/v1/post', {
+        const response = await fetch('https://ai-photogallary.onrender.com/api/v1/post', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
