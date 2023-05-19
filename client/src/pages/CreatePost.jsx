@@ -28,7 +28,7 @@ const CreatePost = () => {
      if (form.prompt) {
        try {
          setGeneratingImg(true);
-         const response = await fetch('https://ai-photogallary.onrender.com', {
+         const response = await fetch('https://ai-photogallary.onrender.com/api/v1/daily', {
            method: 'POST',
            headers: {
              'Content-Type': 'application/json',
